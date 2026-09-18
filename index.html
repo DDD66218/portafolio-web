@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#F5F5F7">
+  <title>Portafolio · Diseño Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="chrome">
+    <div class="toggles">
+      <button type="button" class="toggle" id="langToggle" aria-label="Switch language" data-lang-btn>EN</button>
+      <button type="button" class="toggle toggle-icon" id="themeToggle" aria-label="Cambiar a modo oscuro">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+          <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2.5M21.5 12h-1.7M5.5 5.5l1.5 1.5M17 17l1.5 1.5M18.5 5.5 17 7M7 17l-1.5 1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M20.5 14.2A8 8 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <h1 data-i18n="titulo">Mis últimos trabajos</h1>
+        <p class="sub" data-i18n="sub">Una muestra de lo que puedo hacer. Entra a cada sitio, míralo y dime cuál quieres para tu negocio.</p>
+      </div>
+      <div class="avatar-wrap" id="avatar" aria-hidden="true"></div>
+    </section>
+
+    <section class="grid" id="proyectos" aria-label="Proyectos"></section>
+  </main>
+
+  <footer class="cta">
+    <h2 data-i18n="ctaTitulo">¿Quieres un sitio así para tu negocio?</h2>
+    <a class="btn" id="waBtn" target="_blank" rel="noopener" data-i18n="ctaBtn">Hablemos por WhatsApp</a>
+  </footer>
+
+  <script src="proyectos.js"></script>
+  <script src="app.js"></script>
+  <script type="module" src="avatar-init.js"></script>
+</body>
+</html>
